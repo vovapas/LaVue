@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('content/index');
 });
+
+Route::get('/start', 'IndexController@index');
